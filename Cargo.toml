@@ -1,0 +1,16 @@
+[package]
+name = "internet-status-checker"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+diqwest = "3.1.0"
+futures = "0.3.31"
+futures-util = "0.3.31"
+reqwest = { version = "0.12.9" }
+serde = { version = "1.0.215", features = ["derive"] }
+surge-ping = "0.8.1"
+tokio = { version = "1.42.0", features = ["full"] }
+toml = "0.8.19"
+tracing = "0.1.41"
+tracing-subscriber = { version = "0.3.19", features = ["env-filter"] }

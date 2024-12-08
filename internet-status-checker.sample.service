@@ -1,0 +1,13 @@
+[Unit]
+Description=Internet Status Checker
+After=network.target
+
+[Service]
+Environment="RUST_LOG=internet_status_checker=info"
+Type=simple
+User=root
+ExecStart=$HOME/workspace/internet-status-checker/target/release/internet-status-checker $HOME/workspace/internet-status-checker/config.toml
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target

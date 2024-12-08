@@ -1,0 +1,19 @@
+failure_threshold = 3
+ping_interval_secs = 60
+
+[fritz_box_config]
+username = "<...>"
+password = "<...>"
+host = "192.168.178.1"
+
+[[ping_targets]]
+name = "Google - primary (IPv4)"
+target_ip = "8.8.8.8"
+
+[[ping_targets]]
+name = "Cloudflare (IPv4)"
+target_ip = "1.1.1.1"
+
+[[ping_targets]]
+name = "Control-D (IPv4)"
+target_ip = "76.76.2.0"

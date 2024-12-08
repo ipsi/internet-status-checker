@@ -1,0 +1,4 @@
+/target
+config.toml
+.idea
+internet-status-checker.service
